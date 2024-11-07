@@ -8,7 +8,10 @@ namespace Bridge
 {
     public class Circulo : Forma
     {
-        
+        public Circulo(IColor color) : base(color)
+        {
+        }
+
         public override void Dibujar()
         {
             Console.WriteLine($"Dibujando un círculo {_color.Pintar()}.");

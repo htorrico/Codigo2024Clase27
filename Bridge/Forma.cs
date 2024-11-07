@@ -10,8 +10,14 @@ namespace Bridge
     public abstract class Forma
     {
         //Composición : Propiedad de navegación
-        public IColor _color;
-     
+        protected IColor _color;
+        
+        public Forma(IColor color)
+        {
+            _color = color;
+        }
+
+
         public abstract void Dibujar();
     }
 }

@@ -8,9 +8,12 @@ namespace Bridge
 {
     public class Cuadrado : Forma
     {
-  
-        public override void Dibujar()
+        public Cuadrado(IColor color) : base(color)
         {
+        }
+
+        public override void Dibujar()
+        {            
             Console.WriteLine($"Dibujando un círculo {_color.Pintar()}.");
         }
     }
